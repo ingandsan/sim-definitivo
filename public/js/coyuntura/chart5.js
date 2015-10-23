@@ -16,13 +16,14 @@ google.load("visualization", "1.1", {packages:["corechart"], language: 'En'});
         var options = {
           legend: {position: 'none'},
 		  
-          width: 480,
+        
+        backgroundColor: { fill:'transparent' },
           vAxis: {title: 'Porcentaje', format: "decimal"},
           
           colors: ['#000099'],
 		  tooltip: { isHtml: true },
-		  pointSize: 10,
-		  chartArea:{top:30, left:40},
+		  pointSize: 7,
+		  chartArea:{top:30, left:40, height: 400, width:50000},
 		  fontSize:9,
 		  width: data.getNumberOfRows() * 50,
 		  bar: { groupWidth: "50%" }

@@ -16,9 +16,9 @@ google.load("visualization", "1.1", {packages:["bar"], language: 'en'});
 		
         var options = {
           
-          width: 480,
+      backgroundColor: { fill:'transparent' },
 		  legend: {position: 'none'},
-		  chartArea:{top:30},
+		  chartArea:{top:30, left:40, height: 400, width:50000},
 		  vAxis: {title: 'Porcentaje', format: "decimal"},
           
 		  colors: ['#00BFFF'],

@@ -15,15 +15,15 @@ google.load("visualization", "1.1", {packages:["bar"], language: 'En'});
 	
 		
         var options = {
+          backgroundColor: { fill:'transparent' },
           
-          width: 480,
           vAxis: {title: 'Personas', format: "decimal"},
           
 		  colors: ['#000099'],
 		  legend: {position: 'none'},
 		  width: data.getNumberOfRows() * 80,
 		  
-		  chartArea:{top:30},
+		  chartArea:{top:30, left:40, height: 400, width:50000},
 		  bar: { groupWidth: "50%" }
         };
 

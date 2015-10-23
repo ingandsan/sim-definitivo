@@ -16,13 +16,13 @@ google.load("visualization", "1.1", {packages:["bar"], language: 'en'});
 		
         var options = {
           
-          width: 480,
+      backgroundColor: { fill:'transparent' },
 		  legend: {position: 'none'},
 		  vAxis: {title: 'Número de personas', format: "decimal"},
           
 		  colors: ['#00BFFF'],
 		  
-		  chartArea:{top:30},
+		  chartArea:{top:30, left:40, height: 400, width:50000},
 		  width: data.getNumberOfRows() * 100,
           bar: { groupWidth: "50%" }
         };

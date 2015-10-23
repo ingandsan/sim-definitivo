@@ -15,14 +15,16 @@ google.load("visualization", "1.1", {packages:["corechart"], language: 'En'});
 		
         var options = {
          hAxis:  {title: 'Mes' },
-          width: 1000,
+          width: 700,
+          height:450,
+          backgroundColor: { fill:'transparent' },
           vAxis: {title: 'Porcentaje', format: "decimal"},
 		  chartArea:{top:30, left:30},
           colors: ['#FF9900','#000099'],
 		  tooltip: { isHtml: true },
 		  chartArea:{top:30},
-          pointSize: 10,
-        };
+          pointSize: 7,
+        }
 
 		  
         var chart = new google.visualization.LineChart(document.getElementById('top_x_div'));

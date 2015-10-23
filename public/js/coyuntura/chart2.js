@@ -16,7 +16,9 @@ google.load("visualization", "1.1", {packages:["bar"], language: 'en'});
     
         var options = {
           
-          width: 480,
+        width: 700,
+        height:350,
+        backgroundColor: { fill:'transparent' },
       legend: {position: 'none'},
       vAxis: {title: 'Millones de pesos', format: "currency"},
           

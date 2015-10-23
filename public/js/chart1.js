@@ -11,17 +11,18 @@
       // Create our data table out of JSON data loaded from server.
       var data = new google.visualization.DataTable(data);
       var options = {
-		  width: 500,
-		  height:300,
+		  width: 700,
+		  height:450,
+      backgroundColor: { fill:'transparent' },
 		  vAxis: {title: 'Índice', format: "decimal" },
 		  hAxis:  {title: 'Trimestre' },
-      colors: ['#B8860B','#FF00FF', '#909090', '#B40431','#FFFF00', '#210B61'],    
+      colors: ['#DA81F5','#0431B4','#FF3300','#FFFF00', '#00BFFF', '#E3CEF6'],
 		  tooltip: { isHtml: true },
 		  chartArea:{top:30},
-          pointSize: 10,
+          pointSize: 7,
 
         };
-		
+    		
 		
         var chart = new google.visualization.LineChart(document.getElementById('top_x_div'));
         chart.draw(data, options);
